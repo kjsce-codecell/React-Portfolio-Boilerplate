@@ -31,12 +31,22 @@ export default function ContactForm() {
                 ...prevFormData,
                 nameError: "Name cannot be empty"
             }));
+        } else {
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                nameError: ""
+            }));
         }
 
         if (!formData.email) {
             setFormData(prevFormData => ({
                 ...prevFormData,
                 emailError: "Email cannot be empty"
+            }));
+        } else {
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                emailError: ""
             }));
         }
 
@@ -45,12 +55,22 @@ export default function ContactForm() {
                 ...prevFormData,
                 subjectError: "Subject cannot be empty"
             }));
+        } else {
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                subjectError: ""
+            }));
         }
 
         if (!formData.message) {
             setFormData(prevFormData => ({
                 ...prevFormData,
                 messageError: "Message cannot be empty"
+            }));
+        } else {
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                messageError: ""
             }));
         }
 

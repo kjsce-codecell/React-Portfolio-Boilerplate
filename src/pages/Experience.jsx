@@ -1,4 +1,3 @@
-import React from 'react';
 // importing components
 import Card from '../components/Card';
 // importing JSON data
@@ -12,30 +11,7 @@ const Experience = () => {
             <h1 className='page-heading'>Experience</h1>
             <div className='experience'>
                 {/* Use index to determine if it's an even or odd card */}
-                {expData.map((data, index) => (
-                    index % 2 === 0 ? (
-                        <Card
-                            key={index}
-                            card={"card1"}
-                            cardName={"expCard"}
-                            title={data.title}
-                            description={data.description}
-                            imageUrl={data.imageUrl}
-                            descType={"desc"}
-                        />
-                    ) : (
-                        <Card
-                            key={index}
-                            card={"card2"}
-                            cardName={"expCard"}
-                            isReverse={true}
-                            title={data.title}
-                            description={data.description}
-                            imageUrl={data.imageUrl}
-                            descType={"desc"}
-                        />
-                    )
-                ))}
+                {/*Create a card component that takes in the data from the JSON file and renders it*/}
             </div>
         </div>
     );

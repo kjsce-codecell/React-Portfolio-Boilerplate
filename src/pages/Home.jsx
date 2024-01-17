@@ -64,7 +64,6 @@ export default function Home() {
                 <img
                     src={cd}
                     alt=""
-                    srcset=""
                     style={{
                         position: 'absolute',
                         top: `${cdPosition}px`,

@@ -1,5 +1,4 @@
 // importing necessary dependencies
-import React from 'react';
 import { motion } from 'framer-motion';
 import '../css/About.css';
 import photo from '../assets/photo.png';
