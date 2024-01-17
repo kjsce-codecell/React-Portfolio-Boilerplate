@@ -1,0 +1,123 @@
+* {
+    font-family: Epilogue;
+}
+
+.main-title {
+    color: #000;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.84px;
+}
+
+.exp {
+    width: 80vw;
+    margin: 50px auto 100px auto;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3rem;
+}
+
+.card-image {
+    width: 350px;
+    height: fit-content;
+    border: #F6D0AA 0.5rem solid;
+    border-radius: 20px;
+}
+
+.card1 .card-image{
+    border: #55685D 0.5rem solid;
+}
+
+.card1 {
+    display: flex;
+}
+
+.title {
+    height: 50px;
+    background-color: #8C0027;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    gap: 80px;
+    height: auto;
+    width: 100%;
+    font-size: 16px !important;
+    background-color: #8C0027;
+    padding: 40px;
+    line-height: 22px;
+    color: #fff;
+    border-radius: 0 20px 20px 20px;
+    letter-spacing: 0.54px;
+    text-align: justify;
+}
+
+.bg {
+    width: 325px;
+    background-color: #F77750;
+    border-radius: 20px 20px 0 0;
+}
+
+.card2 {
+    display: flex;
+}
+
+.card2 .title {
+    height: 50px;
+    background-color: #21705E;
+    border-radius: 20px 20px 0 0;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    width: 200px;
+    
+    
+}
+
+.card2 .desc {
+    display: flex;
+    text-align: justify;
+    gap: 80px !important;
+    width: 100%;
+    padding: 40px !important;
+    background-color: #21705E;
+    line-height: 20px;
+    color: #ffffff;
+    border-radius: 0 20px 20px 20px;
+}
+
+.card2 .bg {
+    width: 325px;
+    background-color: #99CDD1;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    
+}
+
+@media (max-width: 900px) {
+    .desc {
+        flex-wrap: wrap-reverse;
+    }
+
+    .card-image {
+        max-width: 100%;
+    }
+
+    .experience {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

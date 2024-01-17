@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+    
+    color: #000000;
+}
+
+body {
+    background-image: url('./assets/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.txt-ctr{
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.margin-a-a{
+    margin: auto auto;
+}
+
+.page {
+    margin-top: 100px !important;
+}
+
+.page-heading {
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-block: 20px 40px;
+}
+
+.page-sub-heading {
+    font-size: 30px;
+    letter-spacing: 1px;
+    
+}
+
+.margin-block-20 {
+    margin-block: 20px;
+}
+
+.margin-block-50 {
+    margin-block: 50px;
+}
+
+/* css for selection */
+::selection {
+    color: #FFC657;
+    background: #FFFFFF;
+}
+
+@media (max-width: 600px) {
+    .page-heading {
+        font-size: 40px;
+    }
+    
+    .page-sub-heading {
+        font-size: 30px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .w-80 {
+        width: 95vw;
+    }
+}
+
+
+
+/* scrollbar css */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FFC657;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

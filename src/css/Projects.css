@@ -1,0 +1,127 @@
+* {
+    font-family: Epilogue;
+}
+
+.desp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+    margin-top: 4%;
+}
+
+.preview img {
+    object-fit: cover;
+    height: auto;
+    width: 30%;
+    border: #55685D 0.5rem solid;
+    border-radius: 20px;
+    
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.pro {
+    width: 80vw;
+    margin: 50px auto 100px auto;
+}
+
+/* -----------------INFOCARD----------*/
+.heading {
+    height: 50px;
+    background-color: #8C0027;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.info {
+    height: auto;
+    width: 100%;
+    font-size: 16px !important;
+    background-color: #8C0027;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 20px;
+    text-align: justify;
+    border-radius: 0 20px 20px 20px;
+    
+}
+
+.header {
+    display: flex;
+}
+
+.bg {
+    width: 325px;
+    background-color: #F77750;
+    border-radius: 20px 20px 0 0;
+}
+
+/* -----------------INFOCARD_2----------*/
+.card_2 .heading {
+    height: 50px;
+    background-color: #21705E;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card_2 .info {
+    width: 100%;
+    background-color: #21705E;
+    padding: 20px;
+    line-height: 20px;
+    font-family: Inter;
+    color: #fff;
+    border-radius: 20px 0px 20px 20px;
+}
+
+.card_2 .bg {
+    width: 325px;
+    background-color: #99CDD1;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card_2 .header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media (max-width:800px) {
+    .desp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .preview {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .preview img {
+        width: 80%;
+        min-width: 300px;
+        margin: auto auto;
+        height: 100%;
+        margin-block: 10px;
+    }
+}

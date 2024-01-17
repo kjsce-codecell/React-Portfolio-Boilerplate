@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: #3A312E;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.logos>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    --size: 40px;
+    height: var(--size);
+    width: var(--size);
+}
+
+.logo-image {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 8rem;
+}
+
+.footer-text {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-block: 20px;
+}

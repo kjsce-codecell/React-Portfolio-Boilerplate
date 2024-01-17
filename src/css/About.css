@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@800&family=Fuggles&family=Inter:wght@400;600&display=swap');
+
+.frame {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.text {
+    text-align: justify;
+    margin: 20px auto;
+    font-weight: 600;
+    width: 90%;
+    max-width: 800px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
