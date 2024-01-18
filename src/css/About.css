@@ -35,6 +35,11 @@
     margin-block: 100px;
 }
 
+.about-desc {
+    margin: 20px auto;
+    width: 60%;
+}
+
 .about-name {
     margin-block: 20px;
     text-align: center;
