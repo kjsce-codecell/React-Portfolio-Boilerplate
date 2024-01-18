@@ -7,6 +7,10 @@
     margin-block: 75px;
 }
 
+.frame img {
+    border: 10px;
+}
+
 .about-text {
     text-align: justify;
     margin: 20px auto;
@@ -20,8 +24,7 @@
     margin-block: 20px;
 }
 
-.page-heading
-{
+.page-heading {
     font-family: 'Epilogue', sans-serif;
     font-size: 48px;
     font-weight: 800;
@@ -29,15 +32,12 @@
     margin-block: 20px;
 }
 
-.about-page
-{
+.about-page {
     min-height: 75vh;
     margin-block: 100px;
 }
 
-.about-name
-{
+.about-name {
     margin-block: 20px;
     text-align: center;
 }
-

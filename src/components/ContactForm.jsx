@@ -13,6 +13,8 @@ export default function ContactForm() {
         messageError: ""
     });
 
+    const [msg, setMsg] = useState("");
+
     function handleChange(event) {
         const { name, value } = event.target;
         console.log(name, value);
@@ -75,26 +77,29 @@ export default function ContactForm() {
         }
 
         event.preventDefault();
-        // send data
-        fetch("https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbzLqwQLT1hJ5-JTHyBG149W7h4RvW5YNYUjRroYnqIEu176pVx9oh7umhd83i6sEi5iIw/exec", {
-            method: "POST",
-            body: {
-                Name: formData.name,
-                Email: formData.email,
-                Subject: formData.subject,
-                Message: formData.message
-            }
-        })
-            .then((response) => response.json())
-            .then((data) => { console.log(data) })
-            .catch((error) => {
-                console.log(error.message);
-            });
+        if (formData.name && formData.email && formData.subject && formData.message) {
+            setMsg("Message successfully sent!");
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                name: "",
+                nameError: "",
+                email: "",
+                emailError: "",
+                subject: "",
+                subjectError: "",
+                message: "",
+                messageError: ""
+            }));
+        }
     }
 
     return (
         <>
             <form onSubmit={handleSubmit} className="form margin-block-20">
+                {msg && (
+                    <b className="margin-block-20">{msg}</b>
+                )}
+
                 <div className="input-div">
                     <input
                         className={`input ${formData.nameError && "error-border"}`}

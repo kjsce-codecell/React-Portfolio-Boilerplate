@@ -1,37 +1,29 @@
 // importing necessary dependencies
-
 import { Description } from '@mui/icons-material';
+// importing stylesheet
 import '../css/About.css';
-// import photo from '../assets/photo.png';
+// importing assets
+import photo from "../../public/photo.png";
 
-const About = () => {
-    const imageVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 , transition: {delay: 0.2}},
-    };
-
-    const textVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { delay: 0.5 } },
-    };
-
+export default function About() {
     return (
         <>
             <div className='about-page'>
+                <h1 className='page-heading'>
+                    About Me
+                </h1>
 
-                <h1 className='page-heading'>About Me</h1>
                 <div className='frame'>
-                    {/*We want you to add your image here with path ../assets/photo.png and border with border=10px*/}
+                    {/* We want you to add your image here with path ../assets/photo.png and border */}
                 </div>
-                    {/*We want you to add your name here name with h1 tag with className="about-name" */}
 
-                    {/*We want you to add your description here with className="about-description" */}
+                {/* Add your name using a h1 tage using the className="about-name" */}
+
+                {/* Add your description using a paragraph tag using the className="about-description" */}
             </div>
         </>
     );
 };
-
-export default About;
 
 
 

@@ -57,6 +57,10 @@
     border: none;
 }
 
+.button:active {
+    background-color: grey;
+}
+
 .error-border {
     border: 2px solid red;
     margin-block: 10px 5px;

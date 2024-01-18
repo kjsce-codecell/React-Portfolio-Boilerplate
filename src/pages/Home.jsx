@@ -3,12 +3,10 @@ import { useEffect, useState } from 'react';
 import useSound from 'use-sound';
 import { Link } from 'react-router-dom';
 // importing assets
-import background from '../assets/background-home.png';
-import cd from '../assets/cd.svg';
-import casette from '../assets/casette.png';
-import ribbon from "../assets/ribbon.png";
+import cd from '../../public/cd.svg';
+import casette from '../../public/casette.png';
 // importing audio
-import musicFile from '../assets/music.mp3';
+import musicFile from '../../public/music.mp3';
 // Importing components
 import Card from '../components/Card';
 // importing data
@@ -24,25 +22,25 @@ export default function Home() {
     const [isPlaying, setIsPlaying] = useState(false);
     // state to manage the position of cd when the music play/pause
     const [cdPosition, setCdPosition] = useState(-1500);
-
-
-
-    useEffect ( () =>{ 
-        
+  
+    // const [isPlaying, setIsPlaying]= useState(false);
+    // const [cdPosition, setCdPosition]= useState(-1500);
+    // useEffect to be called 
+    useEffect(() => {
         if (!isPlaying) {
             stop(); // stop the music
         } else {
             play(); // play the music
         }
         setCdPosition(!isPlaying ? -1500 : -400);
-        return  ( ) => {
+        return () => {
             stop();
-        } 
-    }, [isPlaying])
+        }
+    }, [isPlaying]);
+    
     // function to handle the radio click
     const handleRadioClick = () => {
         setIsPlaying(prevState => !prevState);
-        
     };
 
     // Select a specific card by index
@@ -75,10 +73,8 @@ export default function Home() {
                     }}
                 />
 
-                <h1
-                    className='home-title'
-                >
-                    Apurva Dharam
+                <h1 className='home-title'>
+                    Lorem ipsum
                 </h1>
             </div>
 
@@ -90,42 +86,23 @@ export default function Home() {
             </div>
 
             <div className='flex gap-20 w-80 margin-a-a margin-block-50 preview'>
-                <Card
-                    card={"card1"}
-                    cardName={"infoCard"}
-                    title={"PROJECTS"}
-                    description={selectedProject.description}
-                    descType={"info"}
-                    viewMore={true}
-                    viewMoreLink={"/projects"}
-                />
-
-                <Card
-                    card={"card1"}
-                    cardName={"infoCard"}
-                    title={"EXPERIENCES"}
-                    description={selectedExperience.description}
-                    descType={"info"}
-                    viewMore={true}
-                    viewMoreLink={"/experience"}
-                />
-            </div>
-            <div className='home-cards'>
-            
-                {/* Apurva wants to make 2 more cards name "Experience" and "Projects", Apurva say's to not make the whole component again */}
-                {/* HINT: Use Props*/}
-                {/* She want card-variant:card_2, cardName: infoCard, title: Experience2 , Projects2,
-                    descriptionType: info,
-                    viewMore: true,false respectively
-                    viewMoreLink: /experience, /projects respectively
+                {/* We want to make a preview of the "Experience" and "Projects" page, So, we want to display two Card component from each page */}
+                {/* HINT: Use Props */}
+                {/* Use card-variant: card1/card_2, 
+                    cardName: infoCard
+                    isReverse: true/false
+                    title: Experiences or Projects
+                    descriptionType: info
+                    viewMore: true/false
+                    viewMoreLink: /experience or /projects
                 */}
                 {/* Hint: The similar thing is on the page */}
 
                 {/* ---------------------START CODING FROM HERE----------------------------- */}
 
-                
 
-            {/* END CODING HERE */}
+
+                {/* END CODING HERE */}
             </div>
         </>
     );

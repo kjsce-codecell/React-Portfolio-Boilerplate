@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <>
             <div className='contact-page'>
-                <h1 className='page-heading txt-ctr'>CONTACT ME</h1>
+                <h1 className='page-heading txt-ctr'>Contact Me</h1>
 
                 <div className='line'>
                     <div className='hr'></div>

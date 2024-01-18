@@ -1,5 +1,5 @@
 // importing assets
-import logo from '../assets/CodeCell Logo.png';
+import logo from '../../public/CodeCellLogo.png';
 // importing stylesheet
 import '../css/Footer.css'
 // importing icosn

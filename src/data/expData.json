@@ -1,23 +1,22 @@
 [
-    {
-      "title": "Intern at Abc",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
-      "imageUrl": "src/assets/sample.png"
-    },
-    {
-      "title": "Lead Operations",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
-      "imageUrl": "src/assets/sample.png"
-    },
-    {
-      "title": "Team member",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
-      "imageUrl": "src/assets/sample.png"
-    },
-    {
-      "title": "Hackathon",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
-      "imageUrl": "src/assets/sample.png"
-    }
-  ]
-  
+  {
+    "title": "Intern at Abc",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
+    "imageUrl": "../../public/sample.png"
+  },
+  {
+    "title": "Lead Operations",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
+    "imageUrl": "../../public/sample.png"
+  },
+  {
+    "title": "Team member",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
+    "imageUrl": "../../public/sample.png"
+  },
+  {
+    "title": "Hackathon",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis ultricies. Vivamus ornare sollicitudin tortor, ultricies accumsan diam. Morbi sodales odio auctor lobortis commodo. Nulla a sagittis enim. Cras sollicitudin arcu sit amet lobortis egestas. Morbi interdum vel velit posuere lobortis. Phasellus faucibus libero euismod, sagittis felis eu, scelerisque lacus. Nullam accumsan tristique augue sed viverra. Nulla sodales sed elit et pellentesque. Ut posuere dolor sit amet sapien commodo suscipit. Nullam ut massa imperdiet, imperdiet ligula et, congue tortor. Proin viverra in neque et ",
+    "imageUrl": "../../public/sample.png"
+  }
+]

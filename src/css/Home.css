@@ -1,5 +1,5 @@
 .home-container {
-    background-image: url("../assets/background-home.png") !important;
+    background-image: url("../../public/background-home.png") !important;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -14,6 +14,7 @@
     position: absolute;
     transform: translateY(10px);
     z-index: 3;
+    font-family: Pacifico;
 }
 
 .home-radio {
@@ -31,7 +32,7 @@
 }
 
 .click-btn {
-    background: url(../assets/ribbon.png);
+    background: url(../../public/ribbon.png);
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -39,32 +40,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     font-size: 24px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
     z-index: 4;
-    transform: translateY(20px);
+    transform: translateY(-120px);
 }
-
-@media (max-width: 800px) {
-    .click-btn {
-        transform: translateY(-50px);
-    }
-}
-
-/* Assuming you want to apply these styles to a specific element, like a div */
-.home-cards
-{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    width: 80%;
-    margin-top: 20px;
-}
-  
 
 @media (max-width: 650px) {
     .home-radio {
@@ -74,9 +58,5 @@
     .home-title {
         font-size: 5vw;
         transform: translateY(1vw);
-    }
-
-    .click-btn {
-        transform: translateY(-150px);
     }
 }

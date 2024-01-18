@@ -1,26 +1,12 @@
 // importing from react-router-dom
 import { Link } from 'react-router-dom';
-// importing framer
-import { motion } from 'framer-motion';
 // importing stylesheet
 import '../css/Projects.css';
 
 export default function Card(props) {
-
-    const cardVariants = {
-        hidden: { opacity: 0, y: -30 },
-        visible: { opacity: 1, y: 0 },
-    };
-
     return (
         <>
-            <div
-                className='card'
-                variants={cardVariants}
-                initial='hidden'
-                animate='visible'
-                transition={{ duration: 0.75 }}
-            >
+            <div className='card'>
                 {/* card = card1 or card2 */}
                 <div className={props.card}>
                     {/* cardName - expCard or infoCard */}
