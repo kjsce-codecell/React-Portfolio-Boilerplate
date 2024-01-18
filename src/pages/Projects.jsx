@@ -23,13 +23,13 @@ export default function Projects() {
                     <img src='../../public/hack.png' alt='Project Preview'></img>
                 </div>
 
-                <div className="desp">
+                <div className="cards">
                     {/* {Data.map((data, index) => {
                         return (
                             <div className='project' key={data.id}>
                                 {index % 2 === 0 ? (
                                     <Card
-                                        card={"card1"}
+                                        card={"card-left"}
                                         cardName={"infoCard"}
                                         title={data.title}
                                         description={data.description}
@@ -37,7 +37,7 @@ export default function Projects() {
                                     />
                                 ) : (
                                     <Card
-                                        card={"card2 card_2"}
+                                        card={"card-right"}
                                         cardName={"infoCard"}
                                         title={data.title}
                                         description={data.description}

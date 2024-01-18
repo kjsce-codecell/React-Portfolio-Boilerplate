@@ -2,7 +2,7 @@
     font-family: Epilogue;
 }
 
-.desp {
+.cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
@@ -69,8 +69,8 @@
     border-radius: 20px 20px 0 0;
 }
 
-/* -----------------INFOCARD_2----------*/
-.card_2 .heading {
+/* -----------------INFOcard-right----------*/
+.card-right .heading {
     height: 50px;
     background-color: #21705E;
     border-radius: 20px 20px 0 0;
@@ -84,7 +84,7 @@
     z-index: 1;
 }
 
-.card_2 .info {
+.card-right .info {
     width: 100%;
     background-color: #21705E;
     padding: 20px;
@@ -94,7 +94,7 @@
     border-radius: 20px 0px 20px 20px;
 }
 
-.card_2 .bg {
+.card-right .bg {
     width: 325px;
     background-color: #99CDD1;
     border-radius: 20px 20px 0 0;
@@ -102,13 +102,13 @@
     flex-direction: row-reverse;
 }
 
-.card_2 .header {
+.card-right .header {
     display: flex;
     flex-direction: row-reverse;
 }
 
 @media (max-width:800px) {
-    .desp {
+    .cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
