@@ -24,7 +24,7 @@ export default function Projects() {
                 </div>
 
                 <div className="desp">
-                    {Data.map((data, index) => {
+                    {/* {Data.map((data, index) => {
                         return (
                             <div className='project' key={data.id}>
                                 {index % 2 === 0 ? (
@@ -47,7 +47,7 @@ export default function Projects() {
                             </div>
 
                         );
-                    })}
+                    })} */}
                 </div>
             </div>
         </>

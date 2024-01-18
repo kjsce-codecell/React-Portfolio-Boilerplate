@@ -22,9 +22,7 @@ export default function Home() {
     const [isPlaying, setIsPlaying] = useState(false);
     // state to manage the position of cd when the music play/pause
     const [cdPosition, setCdPosition] = useState(false);
-
-    // const [isPlaying, setIsPlaying]= useState(false);
-    // const [cdPosition, setCdPosition]= useState(-1500);
+    
     // useEffect to be called 
     useEffect(() => {
         if (!isPlaying) {
@@ -32,7 +30,7 @@ export default function Home() {
         } else {
             play(); // play the music
         }
-        setCdPosition(!isPlaying ? false : true);
+        setCdPosition(isPlaying ? false : true);
         return () => {
             stop();
         }
@@ -62,7 +60,7 @@ export default function Home() {
                 <img
                     src={cassete}
                     alt="casset"
-                    className={`home-cassete ${!isPlaying && "down"}`}
+                    className={`home-cassete ${ isPlaying && "down"}`}
                 />
 
                 <h1 className='home-title'>
