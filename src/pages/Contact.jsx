@@ -9,10 +9,10 @@ export default function Contact() {
             <div className='contact-page'>
                 <h1 className='page-heading txt-ctr'>Contact Me</h1>
 
-                <div className='line'>
-                    <div className='hr'></div>
+                <div className='divider'>
+                    <div className='line'></div>
                     <div className='x'>XXX</div>
-                    <div className='hr'></div>
+                    <div className='line'></div>
                 </div>
 
                 <ContactForm />
