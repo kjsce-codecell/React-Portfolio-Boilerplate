@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactForm';
 export default function Contact() {
     return (
         <>
-            <div className='margin-block-50 page'>
+            <div className='contact-page'>
                 <h1 className='page-heading txt-ctr'>CONTACT ME</h1>
 
                 <div className='line'>

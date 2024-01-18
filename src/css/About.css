@@ -4,9 +4,10 @@
     display: flex;
     justify-content: center;
     height: 250px;
+    margin-block: 75px;
 }
 
-.text {
+.about-text {
     text-align: justify;
     margin: 20px auto;
     font-weight: 600;
@@ -16,4 +17,27 @@
     font-size: 18px;
     line-height: 1.5;
     color: #333;
+    margin-block: 20px;
 }
+
+.page-heading
+{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-block: 20px;
+}
+
+.about-page
+{
+    min-height: 75vh;
+    margin-block: 100px;
+}
+
+.about-name
+{
+    margin-block: 20px;
+    text-align: center;
+}
+
