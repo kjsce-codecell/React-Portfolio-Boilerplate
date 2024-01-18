@@ -84,4 +84,20 @@ const data4=expData[3];
     )
 ))}
 ```
+Home.jsx Challenge 1: useState and useEffect
+```
+const [isPlaying, setIsPlaying] = useState(false);
+className={`home-cassete ${ isPlaying && "down"}`}
 
+ useEffect(() => {
+        if (!isPlaying) {
+            stop(); // stop the music
+        } else {
+            play(); // play the music
+        }
+        setCdPosition(isPlaying ? "down" : "up");
+        return () => {
+            stop();
+        }
+    }, [isPlaying]);
+```

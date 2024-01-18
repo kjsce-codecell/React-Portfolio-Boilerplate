@@ -19,26 +19,27 @@ export default function Home() {
     // state to control the play/pause of music
     const [play, { stop }] = useSound(musicFile, { volume: 0.5 });
     // state to store a boolean value of status of music - true when playing and false when paused
-    const [isPlaying, setIsPlaying] = useState(false);
-    // state to manage the position of cd when the music play/pause
+    //Make a state to store the value of isPlaying and a function to update it named setIsPlaying for it to pause and play the music
+    // Start coding from here
+
+
+
+
+
+
+
+
+
+    // End coding here
+
     const [cdPosition, setCdPosition] = useState("up");
     
-    // useEffect to be called 
-    useEffect(() => {
-        if (!isPlaying) {
-            stop(); // stop the music
-        } else {
-            play(); // play the music
-        }
-        setCdPosition(isPlaying ? "down" : "up");
-        return () => {
-            stop();
-        }
-    }, [isPlaying]);
+    // add a useEffect to play the music when the component is mounted
 
     // function to handle the radio click
     const handleRadioClick = () => {
-        setIsPlaying(prevState => !prevState);
+        console.log("clicked");
+        //Change the state of isPlaying to the opposite of what it is
     };
 
     // Select a specific card by index
@@ -60,19 +61,20 @@ export default function Home() {
                 <img
                     src={cassete}
                     alt="cassete"
-                    className={`home-cassete ${ isPlaying && "down"}`}
+                    className={`home-cassete`}
                 />
 
                 <h1 className='home-title'>
-                    Lorem ipsum
+                    Apurva Dharam
                 </h1>
             </div>
 
             <div
                 className='click-btn'
-                onClick={handleRadioClick}
+                // onClick={handleRadioClick}
             >
-                {isPlaying ? "PAUSE" : "PLAY"}
+                {"CLICK ME"}
+                {/* {isPlaying ? "PAUSE" : "PLAY"} */}
             </div>
 
             <div className='flex gap-20 w-80 margin-a-a margin-block-50 preview'>
