@@ -3,7 +3,7 @@ import { Description } from '@mui/icons-material';
 // importing stylesheet
 import '../css/About.css';
 // importing assets
-import photo from "../../public/photo.png";
+// import yourImageName from "../../public/yourImageName";
 
 export default function About() {
     return (
@@ -13,39 +13,35 @@ export default function About() {
                     About Me
                 </h1>
 
-                <div className='frame'>
-                    {/* We want you to add your image here with path ../assets/photo.png and border */}
+                <div className='frame margin-block-50'>
+                    {/* 
+                        Hint: 
+                        Store your image in the public folder
+                        import the image above in line 6
+                        create a img tag 
+                        In the scr tag type {yourImageName}
+                     */}
                 </div>
 
-                {/* Add your name using a h1 tage using the className="about-name" */}
+                {/* 
+                    Create an h1 tag with className = "about-name" 
+                    Add your name inside the h1 tag
+                */}
 
-                {/* Add your description using a paragraph tag using the className="about-description" */}
+                {/* 
+                    Create a paragraph tag with className = "about-description"
+                    Add your description inside the p tag
+
+                    Example Description:
+                    Hello there! I'm CodeCell, a passionate web developer with a knack for turning ideas into reality through clean and efficient code.
+                    My journey in the world of web development began 2 years ago, and since then, I've been on a continuous quest to enhance my skills
+                    and stay on the cutting edge of technology. With a solid foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive and
+                    user-friendly websites that not only meet but exceed the expectations of clients.
+                */}
+
+                {/* remove this line after you've coded the above section */}
+                <p className="txt-ctr">Don't worry, we'll code this page</p>
             </div>
         </>
     );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Example Description:
-
-// Hello there! I'm CodeCell, a passionate web developer with a knack for turning ideas into reality through clean and efficient code.
-// My journey in the world of web development began 2 years ago, and since then, I've been on a continuous quest to enhance my skills
-// and stay on the cutting edge of technology. With a solid foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive and
-// user-friendly websites that not only meet but exceed the expectations of clients.

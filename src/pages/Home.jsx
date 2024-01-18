@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import useSound from 'use-sound';
 import { Link } from 'react-router-dom';
 // importing assets
-import cd from '../../public/cd.svg';
-import casette from '../../public/casette.png';
+import cassete from '../../public/cassete.svg';
+import radio from '../../public/radio.png';
 // importing audio
 import musicFile from '../../public/music.mp3';
 // Importing components
@@ -21,8 +21,8 @@ export default function Home() {
     // state to store a boolean value of status of music - true when playing and false when paused
     const [isPlaying, setIsPlaying] = useState(false);
     // state to manage the position of cd when the music play/pause
-    const [cdPosition, setCdPosition] = useState(-1500);
-  
+    const [cdPosition, setCdPosition] = useState(false);
+
     // const [isPlaying, setIsPlaying]= useState(false);
     // const [cdPosition, setCdPosition]= useState(-1500);
     // useEffect to be called 
@@ -32,12 +32,12 @@ export default function Home() {
         } else {
             play(); // play the music
         }
-        setCdPosition(!isPlaying ? -1500 : -400);
+        setCdPosition(!isPlaying ? false : true);
         return () => {
             stop();
         }
     }, [isPlaying]);
-    
+
     // function to handle the radio click
     const handleRadioClick = () => {
         setIsPlaying(prevState => !prevState);
@@ -53,24 +53,16 @@ export default function Home() {
         <>
             <div className='home-container'>
                 <img
-                    src={casette}
-                    alt=""
-                    className='home-radio' // adding onClick event
+                    src={radio}
+                    alt="radio"
+                    className='home-radio'
                 />
 
-                {/* CD */}
+                {/* CASSET */}
                 <img
-                    src={cd}
-                    alt=""
-                    style={{
-                        position: 'absolute',
-                        top: `${cdPosition}px`,
-                        left: '0',
-                        width: '100%',
-                        zIndex: '1',
-                        transform: 'scale(0.1)',
-                        transition: 'top 1s ease-in-out',
-                    }}
+                    src={cassete}
+                    alt="casset"
+                    className={`home-cassete ${!isPlaying && "down"}`}
                 />
 
                 <h1 className='home-title'>

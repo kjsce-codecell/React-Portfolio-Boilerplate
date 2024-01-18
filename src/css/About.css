@@ -3,8 +3,6 @@
 .frame {
     display: flex;
     justify-content: center;
-    height: 250px;
-    margin-block: 75px;
 }
 
 .frame img {
