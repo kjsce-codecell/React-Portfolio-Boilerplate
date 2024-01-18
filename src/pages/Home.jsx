@@ -101,15 +101,31 @@ export default function Home() {
                 />
 
                 <Card
-                    card={"card2 card_2"}
+                    card={"card1"}
                     cardName={"infoCard"}
-                    isReverse={true}
                     title={"EXPERIENCES"}
                     description={selectedExperience.description}
                     descType={"info"}
                     viewMore={true}
                     viewMoreLink={"/experience"}
                 />
+            </div>
+            <div className='home-cards'>
+            
+                {/* Apurva wants to make 2 more cards name "Experience" and "Projects", Apurva say's to not make the whole component again */}
+                {/* HINT: Use Props*/}
+                {/* She want card-variant:card_2, cardName: infoCard, title: Experience2 , Projects2,
+                    descriptionType: info,
+                    viewMore: true,false respectively
+                    viewMoreLink: /experience, /projects respectively
+                */}
+                {/* Hint: The similar thing is on the page */}
+
+                {/* ---------------------START CODING FROM HERE----------------------------- */}
+
+                
+
+            {/* END CODING HERE */}
             </div>
         </>
     );

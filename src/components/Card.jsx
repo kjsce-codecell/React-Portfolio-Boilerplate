@@ -14,7 +14,7 @@ export default function Card(props) {
 
     return (
         <>
-            <motion.div
+            <div
                 className='card'
                 variants={cardVariants}
                 initial='hidden'
@@ -53,7 +53,7 @@ export default function Card(props) {
                         )}
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </>
     );
 };
