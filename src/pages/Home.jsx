@@ -21,7 +21,7 @@ export default function Home() {
     // state to store a boolean value of status of music - true when playing and false when paused
     const [isPlaying, setIsPlaying] = useState(false);
     // state to manage the position of cd when the music play/pause
-    const [cdPosition, setCdPosition] = useState(false);
+    const [cdPosition, setCdPosition] = useState("up");
     
     // useEffect to be called 
     useEffect(() => {
@@ -30,7 +30,7 @@ export default function Home() {
         } else {
             play(); // play the music
         }
-        setCdPosition(isPlaying ? false : true);
+        setCdPosition(isPlaying ? "down" : "up");
         return () => {
             stop();
         }
@@ -59,7 +59,7 @@ export default function Home() {
                 {/* CASSET */}
                 <img
                     src={cassete}
-                    alt="casset"
+                    alt="cassete"
                     className={`home-cassete ${ isPlaying && "down"}`}
                 />
 
