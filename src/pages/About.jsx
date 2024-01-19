@@ -40,7 +40,7 @@ export default function About() {
                 */}
 
                 {/* remove this line after you've coded the above section */}
-                <p className="txt-ctr">Don't worry, we'll code this page</p>
+                <p className="txt-ctr">We'll code this empty page</p>
             </div>
         </>
     );

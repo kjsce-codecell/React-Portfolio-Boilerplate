@@ -6,11 +6,11 @@ import '../css/Projects.css';
 // import Card from "../components/Card";
 
 export default function Projects() {
-    // const imgArray = [
-    //     "/sample.png",
-    //     "/datazen.png",
-    //     "/hack.jpeg"
-    // ];
+    const imgArray = [
+        "/sample.png",
+        "/datazen.png",
+        "/hack.jpeg"
+    ];
 
     return (
         <>

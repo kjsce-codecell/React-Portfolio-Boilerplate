@@ -100,6 +100,10 @@ className={`home-cassete ${ isPlaying && "down"}`}
             stop();
         }
     }, [isPlaying]);
+
+const handleRadioClick = () => {
+    setIsPlaying(prevState => !prevState);
+};
 ```
 
 
@@ -107,18 +111,18 @@ Project.jsx Challenge 1: Mapping 2
 
 ```
 {Data.map((data, index) => {
-                        return (
-                            <div className='project' key={data.id}>
-                                    <Card
-                                        cardName={"infoCard"}
-                                        title={data.title}
-                                        description={data.description}
-                                        descType={"info"}
-                                        isReverse={index % 2 === 0 ? true : false}
-                                        
-                                    />
-                            </div>
+    return (
+        <div className='project' key={data.id}>
+                <Card
+                    cardName={"infoCard"}
+                    title={data.title}
+                    description={data.description}
+                    descType={"info"}
+                    isReverse={index % 2 === 0 ? true : false}
+                    
+                />
+        </div>
 
-                        );
-                    })}
+    );
+})}
 ```
