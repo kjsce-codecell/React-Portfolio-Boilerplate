@@ -11,7 +11,7 @@ export default function Contact() {
 
                 <div className='line'>
                     <div className='hr'></div>
-                    <div className='x'>XXX</div>
+                    <div className='division'>XXX</div>
                     <div className='hr'></div>
                 </div>
 

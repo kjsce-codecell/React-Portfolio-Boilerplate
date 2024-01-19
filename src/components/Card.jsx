@@ -8,10 +8,10 @@ export default function Card(props) {
         <>
             <div className='card'>
                 {/* card = card1 or card2 */}
-                <div className={props.card}>
+                <div className={props.isReverse ? "card1":"card2"}>
                     {/* cardName - expCard or infoCard */}
-                    <div className={props.cardName}>
-                        <div className={`${props.isReverse && "reverse"} ${props.cardName === "infoCard" && "header"}`}>
+                    <div >
+                    <div className={`header`}>
                             <div className="bg">
                                 <div className={props.cardName === "infoCard" ? "heading" : "title"}>
                                     {props.title}

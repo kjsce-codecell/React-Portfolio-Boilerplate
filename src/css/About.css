@@ -6,7 +6,10 @@
 }
 
 .frame img {
-    border: 10px;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width:300px ;
 }
 
 .about-text {
@@ -37,7 +40,7 @@
 
 .about-desc {
     margin: 20px auto;
-    width: 60%;
+    width: 40%;
 }
 
 .about-name {

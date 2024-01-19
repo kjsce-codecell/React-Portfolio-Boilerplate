@@ -1,5 +1,5 @@
 .home-container {
-    background-image: url("../../public/background-home.png") !important;
+    background-image: url("/background-home.png") !important;
     background-size: cover;
     background-position: center;
     overflow: hidden;

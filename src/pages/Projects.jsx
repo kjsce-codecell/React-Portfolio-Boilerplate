@@ -7,9 +7,9 @@ import Card from "../components/Card";
 
 export default function Projects() {
     const imgArray = [
-        "src/assets/sample.png",
-        "src/assets/datazen.png",
-        "src/assets/hack.jpeg"
+        "/sample.png",
+        "/datazen.png",
+        "/hack.jpeg"
     ];
 
     return (
@@ -18,36 +18,27 @@ export default function Projects() {
                 <h1 className='page-heading txt-ctr'>Projects</h1>
 
                 <div className='preview'>
-                    <img src='../../public/sample.png' alt='Project Preview'></img>
-                    <img src='../../public/datazen.png' alt='Project Preview'></img>
-                    <img src='../../public/hack.png' alt='Project Preview'></img>
+                    <img src='/sample.png' alt='Project Preview'></img>
+                    <img src='/datazen.png' alt='Project Preview'></img>
+                    <img src='/hack.png' alt='Project Preview'></img>
                 </div>
 
-                <div className="desp">
-                    {/* {Data.map((data, index) => {
+                <div className="project-container">
+                    {Data.map((data, index) => {
                         return (
                             <div className='project' key={data.id}>
-                                {index % 2 === 0 ? (
                                     <Card
-                                        card={"card1"}
                                         cardName={"infoCard"}
                                         title={data.title}
                                         description={data.description}
                                         descType={"info"}
+                                        isReverse={index % 2 === 0 ? true : false}
+                                        
                                     />
-                                ) : (
-                                    <Card
-                                        card={"card2 card_2"}
-                                        cardName={"infoCard"}
-                                        title={data.title}
-                                        description={data.description}
-                                        descType={"info"}
-                                    />
-                                )}
                             </div>
 
                         );
-                    })} */}
+                    })}
                 </div>
             </div>
         </>

@@ -2,7 +2,7 @@
     font-family: Epilogue;
 }
 
-.desp {
+.project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
@@ -16,7 +16,6 @@
     width: 30%;
     border: #55685D 0.5rem solid;
     border-radius: 20px;
-    
 }
 
 .preview {
@@ -24,11 +23,6 @@
     justify-content: center;
     column-gap: 5%;
     margin: 2rem 1rem 2rem 1rem;
-}
-
-.pro {
-    width: 80vw;
-    margin: 50px auto 100px auto;
 }
 
 /* -----------------INFOCARD----------*/
@@ -67,10 +61,11 @@
     width: 325px;
     background-color: #F77750;
     border-radius: 20px 20px 0 0;
+
 }
 
 /* -----------------INFOCARD_2----------*/
-.card_2 .heading {
+.card2 .heading {
     height: 50px;
     background-color: #21705E;
     border-radius: 20px 20px 0 0;
@@ -84,7 +79,9 @@
     z-index: 1;
 }
 
-.card_2 .info {
+
+
+.card2 .info {
     width: 100%;
     background-color: #21705E;
     padding: 20px;
@@ -94,21 +91,27 @@
     border-radius: 20px 0px 20px 20px;
 }
 
-.card_2 .bg {
+.card2 .desc
+{
+    border-radius: 20px 0 20px 20px !important;
+}
+
+.card2 .bg {
     width: 325px;
     background-color: #99CDD1;
     border-radius: 20px 20px 0 0;
     display: flex;
     flex-direction: row-reverse;
+    height: 50px;
 }
 
-.card_2 .header {
+.card2 .header {
     display: flex;
     flex-direction: row-reverse;
 }
 
 @media (max-width:800px) {
-    .desp {
+    .project-container {
         grid-template-columns: repeat(1, 1fr);
     }
 

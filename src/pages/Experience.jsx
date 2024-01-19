@@ -16,7 +16,7 @@ export default function Experience() {
                 {/* Use index to determine if it's an even or odd card */}
                 {/* Create a card component that takes in the data from the JSON file and renders it */}
                 <Card
-                    card={"card1"}
+                    isReverse={true}
                     cardName={"expCard"}
                     title={data.title}
                     description={data.description}
@@ -25,10 +25,10 @@ export default function Experience() {
                 />
 
                 <Card
-                    card={"card2"}
+
                     cardName={"expCard"}
                     title={data2.title}
-                    isReverse={true}
+                    
                     description={data2.description}
                     imageUrl={data2.imageUrl}
                     descType={"desc"}
