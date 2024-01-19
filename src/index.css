@@ -41,7 +41,7 @@ body {
 }
 
 .page {
-    margin-block: 100px !important;
+    margin-block: 100px;
 }
 
 .page-heading {

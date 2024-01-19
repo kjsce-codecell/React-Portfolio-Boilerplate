@@ -56,7 +56,7 @@
     gap: 80px;
     height: auto;
     width: 100%;
-    font-size: 16px !important;
+    font-size: 16px;
     background-color: #8C0027;
     padding: 40px;
     line-height: 22px;
@@ -91,9 +91,9 @@
 .card2 .desc {
     display: flex;
     text-align: justify;
-    gap: 80px !important;
+    gap: 80px;
     width: 100%;
-    padding: 40px !important;
+    padding: 40px ;
     background-color: #21705E;
     line-height: 20px;
     color: #ffffff;

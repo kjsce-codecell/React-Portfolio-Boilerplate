@@ -43,7 +43,7 @@
 .info {
     height: auto;
     width: 100%;
-    font-size: 16px !important;
+    font-size: 16px ;
     background-color: #8C0027;
     color: #ffffff;
     padding: 20px;
