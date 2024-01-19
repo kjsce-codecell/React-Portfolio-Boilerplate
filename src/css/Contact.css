@@ -1,4 +1,4 @@
-.line {
+.divider {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,12 +10,12 @@
     font-weight: 800;
 }
 
-.line {
+.divider {
     display: flex;
     gap: 20px;
 }
 
-.hr {
+.line {
     width: 20vw;
     border: 1.5px solid #000000;
 }
@@ -36,7 +36,7 @@
     padding: 10px;
     margin-block: 5px;
     font-size: 20px;
-    outline: none;
+    outdivider: none;
     border: none;
     border-radius: 10px;
     background: #FFE49F;
@@ -82,7 +82,7 @@
 }
 
 @media (max-width: 600px) {
-    .hr {
+    .line {
         width: 30vw;
     }
 
