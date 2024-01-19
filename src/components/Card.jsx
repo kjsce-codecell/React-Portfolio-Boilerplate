@@ -4,16 +4,15 @@ import { Link } from 'react-router-dom';
 import '../css/Projects.css';
 import { PropTypes } from 'prop-types';
 
-export default function Card(props) 
-{
+export default function Card(props) {
     return (
         <>
             <div className='card'>
                 {/* card = card1 or card2 */}
-                <div className={props.isReverse ? "card1":"card2"}>
+                <div className={props.isReverse ? "card1" : "card2"}>
                     {/* cardName - expCard or infoCard */}
                     <div >
-                    <div className={`header`}>
+                        <div className={`header`}>
                             <div className="bg">
                                 <div className={props.cardName === "infoCard" ? "heading" : "title"}>
                                     {props.title}

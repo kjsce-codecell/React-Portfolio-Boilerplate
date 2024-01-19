@@ -25,10 +25,8 @@ export default function Experience() {
                 />
 
                 <Card
-
                     cardName={"expCard"}
                     title={data2.title}
-                    
                     description={data2.description}
                     imageUrl={data2.imageUrl}
                     descType={"desc"}
@@ -39,13 +37,30 @@ export default function Experience() {
                 {/*Challenge 2: Use map function(iterate throught it), and give alternate card1 and card2 to make We Happy */}
                 {/* HINT: Use index to determine if it's an even or odd card */}
 
-                {/* ---------------------START CODING FROM HERE----------------------------- */}
-
-
-
-
-
-                {/* END CODING HERE */}
+                {/* {expData.map((data, index) => (
+                    index % 2 === 0 ? (
+                        <Card
+                            key={index}
+                            card={"card1"}
+                            cardName={"expCard"}
+                            title={data.title}
+                            description={data.description}
+                            imageUrl={data.imageUrl}
+                            descType={"desc"}
+                        />
+                    ) : (
+                        <Card
+                            key={index}
+                            card={"card2"}
+                            cardName={"expCard"}
+                            isReverse={true}
+                            title={data.title}
+                            description={data.description}
+                            imageUrl={data.imageUrl}
+                            descType={"desc"}
+                        />
+                    )
+                ))} */}
             </div>
         </div>
     );
