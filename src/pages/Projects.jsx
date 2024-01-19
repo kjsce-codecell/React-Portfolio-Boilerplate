@@ -1,16 +1,16 @@
 // importing data
-import Data from "../data/projectData.json";
+// import Data from "../data/projectData.json";
 // importing stylesheets
 import '../css/Projects.css';
 // importing components
-import Card from "../components/Card";
+// import Card from "../components/Card";
 
 export default function Projects() {
-    const imgArray = [
-        "/sample.png",
-        "/datazen.png",
-        "/hack.jpeg"
-    ];
+    // const imgArray = [
+    //     "/sample.png",
+    //     "/datazen.png",
+    //     "/hack.jpeg"
+    // ];
 
     return (
         <>
@@ -24,25 +24,24 @@ export default function Projects() {
                 </div>
 
                 <div className="project-container">
-                    {Data.map((data, index) => {
-                        return (
-                            <div className='project' key={data.id}>
-                                    <Card
-                                        cardName={"infoCard"}
-                                        title={data.title}
-                                        description={data.description}
-                                        descType={"info"}
-                                        isReverse={index % 2 === 0 ? true : false}
-                                        
-                                    />
-                            </div>
+                    {/* Apurva wants to iterate(map) throught the "Data" with Card props with  */}
+                    {/* title, description, imageUrl, descType, isReverse */}
+                    {/* HINT: Use map function(iterate throught it), and give alternate card1 and card2 to make her Happy */}
+                    {/* HINT: Use index to determine if it's an even or odd card */}
+                    {/* ---------------------START CODING FROM HERE----------------------------- */}
 
-                        );
-                    })}
+
+
+
+
+
+
+                    {/* END CODING HERE */}
+    
                 </div>
             </div>
         </>
     );
-};
+}
 
 

@@ -101,3 +101,24 @@ className={`home-cassete ${ isPlaying && "down"}`}
         }
     }, [isPlaying]);
 ```
+
+
+Project.jsx Challenge 1: Mapping 2
+
+```
+{Data.map((data, index) => {
+                        return (
+                            <div className='project' key={data.id}>
+                                    <Card
+                                        cardName={"infoCard"}
+                                        title={data.title}
+                                        description={data.description}
+                                        descType={"info"}
+                                        isReverse={index % 2 === 0 ? true : false}
+                                        
+                                    />
+                            </div>
+
+                        );
+                    })}
+```

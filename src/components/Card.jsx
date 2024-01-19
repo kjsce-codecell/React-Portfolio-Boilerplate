@@ -2,8 +2,10 @@
 import { Link } from 'react-router-dom';
 // importing stylesheet
 import '../css/Projects.css';
+import { PropTypes } from 'prop-types';
 
-export default function Card(props) {
+export default function Card(props) 
+{
     return (
         <>
             <div className='card'>
@@ -42,4 +44,16 @@ export default function Card(props) {
             </div>
         </>
     );
+}
+
+
+Card.propTypes = {
+    cardName: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string,
+    descType: PropTypes.string.isRequired,
+    viewMore: PropTypes.bool,
+    viewMoreLink: PropTypes.string,
+    isReverse: PropTypes.bool.isRequired
 };

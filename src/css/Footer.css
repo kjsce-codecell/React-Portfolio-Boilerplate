@@ -37,7 +37,6 @@
 
 .logo-image {
     pointer-events: none;
-    user-select: none;
     -webkit-user-drag: none;
     width: 8rem;
 }
