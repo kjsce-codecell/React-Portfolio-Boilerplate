@@ -29,7 +29,7 @@ export default function About() {
                 */}
 
                 {/* 
-                    Create a paragraph tag with className = "about-description"
+                    Create a paragraph tag with className = "about-desc"
                     Add your description inside the p tag
 
                     Example Description:
