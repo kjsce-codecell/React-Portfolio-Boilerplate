@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../css/NavBar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -13,21 +12,21 @@ export default function Navbar() {
     return (
         <nav className='nav'>
             <div className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-                <Link to="/" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
+                <a href='#home' className='nav-link' onClick={() => setMobileMenuOpen(false)}>
                     HOME
-                </Link>
-                <Link to="/about" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
+                </a>
+                <a href="#about" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
                     ABOUT
-                </Link>
-                <Link to="/projects" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
+                </a>
+                <a href="#projects" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
                     PROJECTS
-                </Link>
-                <Link to="/experience" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
+                </a>
+                <a href="#experience" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
                     EXPERIENCE
-                </Link>
-                <Link to="/contact" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
+                </a>
+                <a href="#contact" className='nav-link' onClick={() => setMobileMenuOpen(false)}>
                     CONTACT
-                </Link>
+                </a>
             </div>
             <button id="open-menu-btn" onClick={toggleMobileMenu}>
                 <MenuIcon />

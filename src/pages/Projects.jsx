@@ -15,7 +15,7 @@ export default function Projects() {
     return (
         <>
             <div className='margin-block-50 page w-80'>
-                <h1 className='page-heading txt-ctr'>Projects</h1>
+                <h1 className='page-heading txt-ctr' id="projects">Projects</h1>
 
                 <div className='preview'>
                     <img src='/sample.png' alt='Project Preview'></img>

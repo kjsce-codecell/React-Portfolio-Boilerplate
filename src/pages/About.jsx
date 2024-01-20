@@ -9,7 +9,7 @@ export default function About() {
     return (
         <>
             <div className='about-page'>
-                <h1 className='page-heading'>
+                <h1 className='page-heading' id='about'>
                     About Me
                 </h1>
 
